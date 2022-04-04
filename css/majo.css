@@ -492,6 +492,21 @@ margin-top:20px;
     width: 15%;
 }
 
+.schedule img{
+    width: 300;
+    height: 300;
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    z-index: 9;
+    opacity: 0.1;
+}
+
 /*=========== bands ================*/
 .bands h1{
     font-size:2rem;
@@ -526,7 +541,8 @@ margin-top:20px;
         padding: 0 2em 0 2em;
         text-align: center;
     }
-     /*============ schedule =====================*/
+
+    /*============ schedule =====================*/
 
     .schedule table{
         width: 70%;
@@ -539,6 +555,8 @@ margin-top:20px;
         font-size: 1.5rem;
     }
 }
+
+
 @media (max-width: 767px){
 
     #header h1{
@@ -635,6 +653,8 @@ margin-top:20px;
         width: 300px;
         height: 300px;
     }
+
+
 /*========= bands ==============*/
     .bands h1{
         font-size:1.7rem;
@@ -657,4 +677,5 @@ margin-top:20px;
         margin: 0;
         width: 100%;
     }
+    
 }
