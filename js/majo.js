@@ -28,3 +28,12 @@
             $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
             $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
         });
+
+        $('#bands-wrapper').multiscroll({
+            //sectionsColor: ['#999', '#999', '#999'],//セクションごとの背景色設定
+            anchors: ['area1', 'area2', 'area3','area4'],//セクションとリンクするページ内アンカーになる名前
+            navigation: true,//右のナビゲーション出現、非表示は false
+            //navigationTooltips:['Estrella', 'THiS is trio', 'THe duo'],//右のナビゲーション現在地時に入るテキスト
+            loopTop: true,//最初のセクションを上にスクロールして最後のセクションまでスクロールするかどうかを定義します。
+            loopBottom: true,//最後のセクションを下にスクロールして最初のセクションまでスクロールするかどうかを定義します。
+        });
