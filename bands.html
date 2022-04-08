@@ -11,6 +11,7 @@
 <!--==============レイアウトを制御するCSSを読み込み===============-->
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.css">
 <link rel="stylesheet" type="text/css" href="css/majo.css">
 </head>
 <body>
@@ -34,19 +35,84 @@
         </nav>
     
 <main id="bands" class="bands">
-    <section>
-        <h1>Bands</h1>
-        <p>近日公開!</p>
-    </section>
+    <h1>Bands</h1>
+    <nav class="bands-nav">
+        <ul class="bands-ul">
+            <li data-menuanchor="area1" class="active" id="active"><a href="area1"></a></li>
+            <li data-menuanchor="area2" class="active" id="active"><a href="area2"></a></li>
+            <li data-menuanchor="area3" class="active" id="active"><a href="area3"></a></li>
+        </ul>
+    </nav>
+
+    <div id="bands-wrapper">
+        <div class="ms-right"><!--====== 右画面 =============-->
+
+            <div class="ms-section" id="right1"></div>
+            <div class="ms-section" id="right2"></div>
+            <div class="ms-section" id="right3"></div>
+            <div class="ms-section" id="right4"></div>
+
+        </div><!--========== ここまで右画面 =====================-->
+
+        <div class="ms-left"><!--========= 左画面 ==============-->
+            <section class="ms-section" id="left1">
+                <div class="sp-top"></div>
+                <dov class="sp-bottom">
+                    <h2>Estrella</h2>
+                    <p>私たちはEstrella(エストレーラ)と申します。<br>
+                        聞き馴染みのない単語だと思いますが、この名前の由来はスペイン語で「星」という意味です。<br>
+                        メンバー4人中、3人が大学から音楽を始めました。<br>
+                        協力して、より良いJAZZを演奏できるように頑張っています!まだまだ未熟なバンドですが、応援よろしくお願いいたします!</p>
+                </dov>
+            </section>
+
+            <section class="ms-section" id="left2">
+                <div class="sp-top"></div>
+                <dov class="sp-bottom">
+                    <h2>THiS is trio</h2>
+                    <p>THiS is trioはピアノ、ギター、ベースで構成されたバンドです。<br>
+                        このバンドはジャズの即興演奏の部分にフォーカスして演奏しています。<br>
+                        特徴は即興で音楽を創るために音でコミュニケーションを取り演奏していることです。<br>
+                        真っ白な楽譜から創り上げていく演奏を楽しんで聞いていただけると嬉しいです!</p>
+                </dov>
+            </section>
+
+            <section class="ms-section" id="left3">
+                <div class="sp-top"></div>
+                <dov class="sp-bottom">
+                    <h2>THe duo</h2>
+                    <p>THe duoはピアノ、ギターで構成されたバンドです。<br>
+                        このバンドは様々な曲をduoでも演奏してみたいということから、組んだバンドです。<br>
+                        それぞれの演奏が分かりやすく聞こえるため、リズムや曲の強弱を大きく変化させることができます。<br>
+                        曲中に変わっていく曲調の変化を楽しんでいただけるように頑張ります!</p>
+                </dov>
+            </section>
+
+            <section class="ms-section" id="left4">
+                <div class="sp-top"></div>
+                <dov class="sp-bottom">
+                    <h2>てっや</h2>
+                    <p>ベース担当テツヤの“てつや”と、工大のブラックさ際立つ徹夜の“てつや”を掛け合わせたガッツバンド。<br>
+                        目標は、演奏会の皆勤賞。<br>
+                        「バンド練？…朝にやるしかないんだ！」</p>
+                </dov>
+            </section>
+
+
+
+        </div><!--===========ここまで左画面===================-->
+    </div>
 </main>
 
-<footer id="footer">
+<footer class="bands-footer" id="footer">
     <small>&copy;2022 金沢工業大学 軽音楽部 MAJO.</small>
     </footer>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <!--自作のJS-->
 <script src="js/majo.js"></script>
 </body>
