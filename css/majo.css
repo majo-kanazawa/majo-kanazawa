@@ -546,6 +546,10 @@ margin-top:20px;
     color: rgb(0, 9, 114);
 }
 
+#left5 h2{
+    color: rgb(114, 91, 0);
+}
+
 /*バンド写真*/
 #right1{
     background:url("../img/Estrella.jpg") no-repeat center;
@@ -574,6 +578,14 @@ margin-top:20px;
     margin: -50px 0 0 0;
     background-color: #222;
 }
+
+#right5{
+    background:url("../img/quattro.jpg") no-repeat center;
+    background-size: contain;
+    margin: -50px 0 0 0;
+    background-color: #222;
+}
+
 
 /*右にある丸ナビゲーション色*/
 
@@ -799,6 +811,11 @@ margin-top:20px;
     	background-size:cover;
     }
 
+    #left5 .sp-top{
+    	background:url("../img/quattro.jpg") no-repeat center;
+    	background-size:cover;
+    }
+
 
     /*右にある丸ナビゲーション色*/
     #multiscroll-nav span{
@@ -852,52 +869,64 @@ margin-top:20px;
         height: 230px;
         padding: 0;
     }
+
+    .bands h2{
+        padding: 0 0 15px 10px;
+    }
 }
 
 @media (max-width: 350px){
     .sp-top{
-        height: 200px;
+        height: 170px;
     	padding: 0;
     }
 
     .bands h2{
         margin: 30px 0 0 0;
-        padding: 0 0 15px 10px;
+        padding: 0 0 0px 10px;
     }
     .bands-footer{
         padding:5px 0;
     }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 570px) {
     .sp-top{
-        padding: 0;
+        margin: 100px 0 0 0;
     }
 
-    .bands h2{
-        margin: 30px 0 0 0;
+    .bands h1{
+        font-size: 1.5rem;
     }
-    .bands-footer{
-        padding:5px 0;
-    }
-}
 
-@media (max-height: 500px) {
     .bands h2{
         font-size: 1.2rem;
-        padding: 0 0 0 0;
+        margin:20px 0 0 0;
     }
     .bands p{
         font-size: 0.7rem;
     }
+
+    #multiscroll-nav span{
+        margin: 130px 0 0 15px;
+    }
+
+    .bands-footer{
+        padding:5px 0;
+    }
+    
 }
 
-@media (max-height: 350px) {
+@media (max-height: 400px) {
     .bands h2{
         font-size: 1rem;
         padding: 0 0 0 0;
     }
     .bands p{
         font-size: 0.7rem;
+    }
+
+    .bands-footer{
+        padding:5px 0;
     }
 }
