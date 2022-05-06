@@ -968,6 +968,10 @@ margin-top:20px;
     
 }
 @media (max-height: 450px) {
+    .logo{
+        width: 250px;
+        height: 250px;
+    }
     .wrapper_logo{
         opacity: 0;
     }
@@ -975,6 +979,14 @@ margin-top:20px;
     .wrapper_phone_logo{
         top: 52%;
         opacity: 1;
+    }
+    .schedule img{
+        width: 250px;
+        height: 250px;
+    }
+    .about img{
+        width: 250px;
+        height: 250px;
     }
 }
 
