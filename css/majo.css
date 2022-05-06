@@ -201,7 +201,7 @@ height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（1
 .slick-next {
     position: absolute;/*絶対配置にする*/
 z-index: 3;
-    top: 42%;
+    top: 48%;
     cursor: pointer;/*マウスカーソルを指マークに*/
     outline: none;/*クリックをしたら出てくる枠線を消す*/
     border-top: 2px solid #ccc;/*矢印の色*/
@@ -337,14 +337,14 @@ small{
     display: block;
     text-align: center;
     }
-    
+
 /*========= index ========================*/
 
  
 .wrapper{
 position: relative;
 }
-.wrapper img{
+.wrapper_logo{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -354,6 +354,20 @@ position: relative;
     padding: 0;
     margin: 0;
     z-index: 999;
+    opacity: 1;
+}
+
+.wrapper_phone_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 350px;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    opacity: 0;
 }
 
 .wrapper table{
@@ -467,6 +481,13 @@ margin-top:20px;
     color: rgb(0,30,96);
     }
 
+.schedule h2{
+    font-size:1.5rem;
+    text-align: center;
+    margin: 50px 0 10px 0;
+    color: rgb(0,30,96);
+}
+
 .schedule table{
     margin: auto;
     text-align: center;
@@ -491,8 +512,9 @@ margin-top:20px;
 
 .sp{
     text-align: center;
-    width: 15%;
+    width: 10%;
 }
+
 
 .schedule img{
     width: 300;
@@ -633,9 +655,9 @@ margin-top:20px;
 }
 /*============================================ スマートフォン向けCSS ================================*/
 /*============ shedule 780px================*/
-@media (max-width: 780px){
+@media (max-width: 800px){
     .schedule table tr td{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -675,9 +697,12 @@ margin-top:20px;
     section:nth-child(2n){
         background:rgb(220, 228, 250);
     }
-    .wrapper img{
-        width: 300px;
-        height: 300px;
+    .wrapper_logo{
+        opacity: 0;
+    }
+
+    .wrapper_phone_logo{
+        opacity: 1;
     }
 
     .index h1{
@@ -697,7 +722,7 @@ margin-top:20px;
         height: 22px;
     }
     .follow li{
-        padding: 0 30px 0 30px;
+        padding: 0 20px 0 30px;
     }
 /*========= about ===========*/
     .about h1{
@@ -722,6 +747,10 @@ margin-top:20px;
     .schedule h1{
         font-size:1.7rem;
         margin: 90px 0 50px 0;
+    }
+    .schedule h2{
+        font-size:1.2rem;
+        margin: 50px 0 5px 0;
     }
     .schedule table tr td{
         padding: 3px;
@@ -845,7 +874,13 @@ margin-top:20px;
         white-space: nowrap;
         margin: 0;
         width: 100%;
-    }   
+    }  
+    .schedule table tr td{
+        font-size: 1rem;
+    }
+    .schedule table tr th{
+        font-size: 0.7rem;
+    }
 }
 /*================ bands 450px ==============*/
 @media (max-width: 450px) {
@@ -875,18 +910,34 @@ margin-top:20px;
     }
 }
 
+@media (max-width: 370px){
+    .follow li{
+        padding: 0 5px 0 30px;
+    }
+}
 @media (max-width: 350px){
     .sp-top{
         height: 170px;
     	padding: 0;
     }
-
+    .follow li{
+        padding: 0 0 0 30px;
+    }
     .bands h2{
         margin: 30px 0 0 0;
         padding: 0 0 0px 10px;
     }
     .bands-footer{
         padding:5px 0;
+    }
+    .schedule table tr td{
+        font-size: 0.7rem;
+    }
+    .schedule table tr th{
+        font-size: 0.2rem;
+    }
+    .sp{
+        width: 0%;
     }
 }
 
@@ -915,6 +966,16 @@ margin-top:20px;
         padding:5px 0;
     }
     
+}
+@media (max-height: 450px) {
+    .wrapper_logo{
+        opacity: 0;
+    }
+
+    .wrapper_phone_logo{
+        top: 52%;
+        opacity: 1;
+    }
 }
 
 @media (max-height: 400px) {
