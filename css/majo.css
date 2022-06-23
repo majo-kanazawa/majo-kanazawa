@@ -649,6 +649,14 @@ position: relative;
     .wrapper table{
         opacity: 0;
     }
+    .wrapper_logo{
+        opacity: 0;
+    }
+
+    .wrapper_phone_logo{
+        top: 52%;
+        opacity: 1;
+    }
 }
 
 
@@ -970,6 +978,13 @@ position: relative;
     }
 }
 
+@media (max-height: 680px) {
+    .bands h2{
+        font-size: 1.2rem;
+        margin:10px 0 0 0;
+    }
+}
+
 @media (max-height: 570px) {
     .sp-top{
         margin: 100px 0 0 0;
@@ -980,7 +995,6 @@ position: relative;
     }
 
     .bands h2{
-        font-size: 1.2rem;
         margin:20px 0 0 0;
     }
     .bands p{
@@ -1002,14 +1016,7 @@ position: relative;
         width: 250px;
         height: 250px;
     }
-    .wrapper_logo{
-        opacity: 0;
-    }
-
-    .wrapper_phone_logo{
-        top: 52%;
-        opacity: 1;
-    }
+    
     .schedule img{
         width: 250px;
         height: 250px;
