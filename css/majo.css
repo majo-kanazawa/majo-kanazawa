@@ -563,56 +563,78 @@ position: relative;
 
 /* バンド名の色 #更新 */
 #left1 h2{
-    color: rgb(211, 102, 1);
+    color: rgb(114, 0, 0);
 }
 
 #left2 h2{
-    color: rgb(0, 148, 12);
+    color: rgb(228, 97, 69);
 }
 
 #left3 h2{
-    color: rgb(0, 127, 231);
+    color: rgb(208, 171, 116);
 }
 
 #left4 h2{
-    color: rgb(0, 9, 114);
+    color: rgb(0, 127, 231);
 }
 
 #left5 h2{
-    color: rgb(114, 0, 0);
+    color: rgb(0, 148, 12);
+}
+
+#left6 h2{
+    color: rgb(211, 102, 1);
+}
+
+#left7 h2{
+    color: rgb(0, 9, 114);
 }
 
 /*バンド写真 #更新 */
 #right1{
-    background:url("../img/Estrella.jpg") no-repeat center;
+    background:url("../img/quattro.jpg") no-repeat center;
     background-size: contain;
     margin: -50px 0 0 0;
     background-color: #222;
 }
 
 #right2{
-    background:url("../img/this_is_trio.jpg") no-repeat center;
+    background:url("../img/quattro_plus.jpg") no-repeat center;
     background-size: contain;
     margin: -50px 0 0 0;
     background-color: #222;
 }
 
 #right3{
-    background:url("../img/the_duo.jpg") no-repeat center;
+    background:url("../img/stella.jpg") no-repeat center;
     background-size: contain;
     margin: -50px 0 0 0;
     background-color: #222;
 }
 
 #right4{
-    background:url("../img/tetuya.jpg") no-repeat center;
+    background:url("../img/the_duo.jpg") no-repeat center;
     background-size: contain;
     margin: -50px 0 0 0;
     background-color: #222;
 }
 
 #right5{
-    background:url("../img/quattro.jpg") no-repeat center;
+    background:url("../img/this_is_trio.jpg") no-repeat center;
+    background-size: contain;
+    margin: -50px 0 0 0;
+    background-color: #222;
+}
+
+#right6{
+    background:url("../img/Estrella.jpg") no-repeat center;
+    background-size: contain;
+    margin: -50px 0 0 0;
+    background-color: #222;
+}
+
+#right7{
+    background:url("../img/tetuya.jpg") no-repeat center;
     background-size: contain;
     margin: -50px 0 0 0;
     background-color: #222;
@@ -863,27 +885,37 @@ position: relative;
 	
     /* バンド写真 #更新 */
     #left1 .sp-top{
-    	background:url("../img/Estrella.jpg") no-repeat center;
+    	background:url("../img/quattro.jpg") no-repeat center;
     	background-size:cover;
     }
 
     #left2 .sp-top{
-    	background:url("../img/this_is_trio.jpg") no-repeat center;
+    	background:url("../img/quattro_plus.jpg") no-repeat center;
     	background-size:cover;
     }
 
     #left3 .sp-top{
-    	background:url("../img/the_duo.jpg") no-repeat center;
+    	background:url("../img/stella.jpg") no-repeat center;
     	background-size:cover;
     }
 
     #left4 .sp-top{
-    	background:url("../img/tetuya.jpg") no-repeat center;
+    	background:url("../img/the_duo.jpg") no-repeat center;
     	background-size:cover;
     }
 
     #left5 .sp-top{
-    	background:url("../img/quattro.jpg") no-repeat center;
+    	background:url("../img/this_is_trio.jpg") no-repeat center;
+    	background-size:cover;
+    }
+
+    #left6 .sp-top{
+    	background:url("../img/Estrella.jpg") no-repeat center;
+    	background-size:cover;
+    }
+
+    #left7 .sp-top{
+    	background:url("../img/tetuya.jpg") no-repeat center;
     	background-size:cover;
     }
 
