@@ -1,4 +1,5 @@
- $('.slider').slick({
+//更新必要箇所->　#更新
+$('.slider').slick({
     autoplay: true,//自動的に動き出すか。初期値はfalse。
     autoplaySpeed: 3500,//次のスライドに切り替わる待ち時間
     speed:1500,//スライドの動きのスピード。初期値は300。
@@ -31,7 +32,10 @@
 
         $('#bands-wrapper').multiscroll({
             //sectionsColor: ['#999', '#999', '#999'],//セクションごとの背景色設定
-            anchors: ['area1', 'area2', 'area3','area4','area5'],//セクションとリンクするページ内アンカーになる名前
+
+            //#更新　
+            anchors: ['area1', 'area2', 'area3','area4','area5','area6','area7'],//セクションとリンクするページ内アンカーになる名前
+            
             navigation: true,//右のナビゲーション出現、非表示は false
             //navigationTooltips:['Estrella', 'THiS is trio', 'THe duo'],//右のナビゲーション現在地時に入るテキスト
             loopTop: true,//最初のセクションを上にスクロールして最後のセクションまでスクロールするかどうかを定義します。
