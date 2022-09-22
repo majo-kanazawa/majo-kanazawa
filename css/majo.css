@@ -402,6 +402,13 @@ position: relative;
     margin-top:20px;
 }
 
+.twt_wrap {
+    text-align: center;
+}
+.twt_wrap > iframe {
+    margin: auto;
+}
+
 .follow{
     margin: auto;
     text-align: center;
