@@ -414,6 +414,10 @@ position: relative;
     text-align: center;
 }
 
+.follow a{
+    text-align: center;
+}
+
 .follow img{
     width: auto;
     height: 40px;
