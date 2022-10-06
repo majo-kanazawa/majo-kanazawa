@@ -354,25 +354,12 @@ position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
     padding: 0;
     margin: 0;
     z-index: 999;
     opacity: 1;
-}
-
-.wrapper_phone_logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 350px;
-    height: 350px;
-    padding: 0;
-    margin: 0;
-    z-index: 999;
-    opacity: 0;
 }
 
 .wrapper table{
@@ -671,11 +658,8 @@ position: relative;
     .wrapper table{
         opacity: 0;
     }
-    .wrapper_logo{
-        opacity: 0;
-    }
 
-    .wrapper_phone_logo{
+    .wrapper_logo{
         top: 52%;
         opacity: 1;
     }
@@ -764,10 +748,11 @@ position: relative;
         background:rgb(220, 228, 250);
     }
     .wrapper_logo{
-        opacity: 0;
+        width: 350px;
+        height: 350px;
     }
 
-    .wrapper_phone_logo{
+    .wrapper_logo{
         opacity: 1;
     }
 
